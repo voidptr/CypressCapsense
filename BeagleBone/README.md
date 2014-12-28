@@ -87,7 +87,7 @@ is not yet available. Stay tuned.
 ===============================================================================
 Help on module CypressCapsense_I2C:
 
-'''
+```
 NAME
     CypressCapsense_I2C
 
@@ -348,6 +348,6 @@ CLASSES
      |  lock = [150, 90, 195]
      |  
      |  unlock = [60, 165, 105]
-'''
+```
 
 
