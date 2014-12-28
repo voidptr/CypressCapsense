@@ -15,8 +15,9 @@ default address using the *changeDeviceAddress* function in this library.
 
 To confirm the value of your device's address, you may disconnect all other 
 unknown devices except for the Capsense, and then run:
-> $ i2cdetect -y -r 1
-
+```
+$ i2cdetect -y -r 1
+```
 Setting the address only needs to be done once.
 
 Setting the address works from Arduino devices, and probably from BeagleBone.
