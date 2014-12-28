@@ -36,7 +36,7 @@ primitive.
 To set these values, you must place the device in SETUP_OPERATION_MODE, apply
 the setting, then save, and restart:
 
-'''python
+'''
 sensor.write(CSE_COMMAND_REG, SETUP_OPERATION_MODE);
 sensor.write(CypressCapsense_I2C.CSE_CS_OTH_SET, (CypressCapsense_I2C.CSE_OTH_SET_DISABLE_EXT_CAP | 
             CypressCapsense_I2C.CSE_OTH_SET_SENSOR_RESET | 
@@ -57,7 +57,7 @@ In my board designs, however, I find whatever method they are using to be
 hilariously ineffective. Therefore, it is prudent to reset the board sensors
 periodically. This may be done via the *reset* function
 
-'''python
+'''
 sensor.reset()
 '''
 
