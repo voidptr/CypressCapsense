@@ -36,13 +36,15 @@ primitive.
 To set these values, you must place the device in SETUP_OPERATION_MODE, apply
 the setting, then save, and restart:
 
-> sensor.write(CSE_COMMAND_REG, SETUP_OPERATION_MODE);
-> sensor.write(CypressCapsense_I2C.CSE_CS_OTH_SET, (CypressCapsense_I2C.CSE_OTH_SET_DISABLE_EXT_CAP | 
+'''python
+sensor.write(CSE_COMMAND_REG, SETUP_OPERATION_MODE);
+sensor.write(CypressCapsense_I2C.CSE_CS_OTH_SET, (CypressCapsense_I2C.CSE_OTH_SET_DISABLE_EXT_CAP | 
             CypressCapsense_I2C.CSE_OTH_SET_SENSOR_RESET | 
             CypressCapsense_I2C.CSE_OTH_SET_CLOCK_IMO))
-> sensor.write(CypressCapsense_I2C.CSE_COMMAND_REG, CypressCapsense_I2C.STORE_CURRENT_CONFIGURATION_TO_NVM)
-> sensor.write(CypressCapsense_I2C.CSE_COMMAND_REG, CypressCapsense_I2C.RECONFIGURE_DEVICE)
-> sensor.write(CypressCapsense_I2C.CSE_COMMAND_REG, CypressCapsense_I2C.NORMAL_OPERATION_MODE)
+sensor.write(CypressCapsense_I2C.CSE_COMMAND_REG, CypressCapsense_I2C.STORE_CURRENT_CONFIGURATION_TO_NVM)
+sensor.write(CypressCapsense_I2C.CSE_COMMAND_REG, CypressCapsense_I2C.RECONFIGURE_DEVICE)
+sensor.write(CypressCapsense_I2C.CSE_COMMAND_REG, CypressCapsense_I2C.NORMAL_OPERATION_MODE)
+'''
 
 Device setup only needs to be done once. The settings are stored in 
 non-volatile memory across restarts.
@@ -55,7 +57,9 @@ In my board designs, however, I find whatever method they are using to be
 hilariously ineffective. Therefore, it is prudent to reset the board sensors
 periodically. This may be done via the *reset* function
 
-> sensor.reset()
+'''python
+sensor.reset()
+'''
 
 ###Buffer Reading
 
@@ -82,6 +86,7 @@ is not yet available. Stay tuned.
 ===============================================================================
 Help on module CypressCapsense_I2C:
 
+'''
 NAME
     CypressCapsense_I2C
 
@@ -342,6 +347,6 @@ CLASSES
      |  lock = [150, 90, 195]
      |  
      |  unlock = [60, 165, 105]
-
+'''
 
 
