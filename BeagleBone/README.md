@@ -1,4 +1,8 @@
-#Python Library for Cypress Capsense C8YC201xx over I2C
+#Python Library for Cypress Capsense CY8C201xx over I2C
+
+This library provides support for the Cypress Capsense Express CY8C201xx series 
+of capacitive touch controllers. The library is known to work with the CY8C20110 
+and CY8C20142 chips, though it should work with others in the series.
 
 This library requires the SMBus Linux i2c libray. It has been tested on the 
 BeagleBone, but it should work on any linux system that supports I2C.
