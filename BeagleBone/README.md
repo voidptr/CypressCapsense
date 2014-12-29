@@ -5,7 +5,7 @@ BeagleBone, but it should work on any linux system that supports I2C.
 
 Please read *example.py* for information about how to invoke the device.
 
-The PyPI index for this package may be found at: 
+The PyPI package may be found at: 
 https://pypi.python.org/pypi/CypressCapsense_I2C
 
 ##External Documentation
