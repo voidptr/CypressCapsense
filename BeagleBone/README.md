@@ -5,6 +5,20 @@ BeagleBone, but it should work on any linux system that supports I2C.
 
 Please read *example.py* for information about how to invoke the device.
 
+##External Documentation
+Backups to the below documents are listed in ../ReferenceMaterials/
+
+###Cypress Capsense CY8C201xx
+http://www.cypress.com/?id=1377
+
+###CY8C201xx Register Reference Guide
+http://www.cypress.com/?rID=14664
+http://www.cypress.com/?docID=41921
+
+###CY8C201xx Datasheet
+http://www.cypress.com/?rID=3912
+http://www.cypress.com/?docID=50758
+ 
 ##Idiosyncracies
 
 ###I2C Address
