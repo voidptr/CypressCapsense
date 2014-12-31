@@ -5,11 +5,11 @@ Libraries for controlling the Cypress Capsense(R) C8YC201xx series touch sensor 
 
 ##Installation
 
-##Arduino
+###Arduino
 
 After downloading, rename "Arduino" folder to CypressCapsense and copy to Arduino Libraries folder. Restart Arduino IDE, then open File->Sketchbook->Library->CypressCapsense->status sketch.
 
-##Beaglebone Black Python
+###Beaglebone Black Python
 
 Make sure the time on your BBB is correct.
 ```
